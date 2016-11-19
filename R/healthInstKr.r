@@ -26,6 +26,8 @@
 # 15    93     한의원
 
 get_health_inst <- function(code) {
+  url <- "http://www.g-health.kr/portal/health/pubHealthSearch/get_list.do"
+  
   pl <- list(cl_cd=code, rows=130000, cpage=1)
   r <- httr::POST(url,
             body = pl,
