@@ -5,6 +5,11 @@
 ## data source
 공공보건포털(g-health.kr)의 정보를 실시간으로 가져옵니다.
 
+## 설
+
+> install.packages("devtools") # if you don't have devtools
+> devtools::install_github("yonghah/healthInstKr")
+
 ## 사용법
 
 보건기관 코드를 인자로 주어 실행시킵니다. (보건소=71)
